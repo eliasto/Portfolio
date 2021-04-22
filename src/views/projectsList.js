@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from './components/languages';
 import Project from './components/project';
-import azimoutImage from './components/assets/mockup_azimout.png';
-import LVSImage from './components/assets/mockup_lvs.png';
-import PATVImage from './components/assets/mockup_patv.png';
-import BeendyImage from './components/assets/mockup_beendy.png';
+import azimoutImage from './components/assets/mockup_azimout-min.png';
+import LVSImage from './components/assets/mockup_lvs-min.png';
+import PATVImage from './components/assets/mockup_patv-min.png';
+import BeendyImage from './components/assets/mockup_beendy-min.png';
 
 export default function ProjectList() {
     const { dictionary } = useContext(LanguageContext);

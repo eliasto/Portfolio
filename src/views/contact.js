@@ -8,7 +8,7 @@ function Contact(prop){
   const mail = 'mailto:'+dictionary.mail+'';
 
   return (
-   <div id="contact" class="container mt-10 md:px-20 ">
+   <div id="contact" class="container mt-10 md:px-20 mx-auto">
        <div class="shadow-md bg-blue-50 p-10 mb-10 rounded-xl flex flex-col w-full justify-center overflow-y-hidden">
        <h2 class="pt-4 uppercase text-center tracking-wide text-3xl text-yellow-400 font-semibold">{dictionary.contactTitle}</h2>
        <p class="pb-10 text-center tracking-wide text-sm text-gray-700 font-medium">{dictionary.contactSubtitle}</p>
