@@ -42,9 +42,7 @@ function App() {
  <div className="lg:w-1/2 lg:mr-16 lg:flex lg:justify-center lg:items-center">
    <div className="lg:w-96 relative">
 	 <div className="absolute pattern-dots-xl text-green-100 top-0 left-0 w-32 h-48 md:h-96 transform -translate-y-12 -translate-x-16 -rotate-3"></div>
-	 <div className="absolute pattern-dots-xl text-green-100 bottom-0 right-0 w-32 h-48 md:h-96 transform translate-y-12 translate-x-16 rotate-3"></div>
-	 <div className="absolute rounded-full top-0 right-0 w-32 h-32 bg-green-200 bg-opacity-50 -mt-12 -mr-12"></div>
-	 <div className="absolute rounded-xl bottom-0 left-0 w-32 h-32 bg-blue-200 bg-opacity-50 -mb-10 -ml-10 transform rotate-3"></div>
+	 <div className="absolute rounded-xl bottom-0 left-0 w-32 h-32 bg-green-200 bg-opacity-50 -mb-10 -ml-10 transform rotate-3"></div>
 	 <img src={illustration} className="relative rounded-lg mx-auto" />
    </div>
  </div>
