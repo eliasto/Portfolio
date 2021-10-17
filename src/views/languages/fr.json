@@ -24,5 +24,6 @@
     "contactSubtitle": "Je suis disponible pour vous aider à développer votre projet sur internet. Contactez-moi et travaillons ensemble pour développer la meilleure solution pour vous.",
     "mobileappLabel": "Application",
     "websiteLabel": "Site web",
-    "videoserviceLabel": "Service vidéo"
+    "videoserviceLabel": "Service vidéo",
+    "octoroleDescription": "Octorole est un marketplace permettant aux administrateurs de serveurs Discord de vendre des grades temporaires ou non, en passant via Paypal. Visitez la version de démonstration à l'adresse octorole.xyz"
 }
