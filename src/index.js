@@ -12,7 +12,6 @@ import Footer from './views/footer';
 
 import { LanguageProvider } from './views/components/languages';
 import ProjectList from './views/projectsList';
-import Home from './views/Home';
 
 ReactDOM.render(
 
@@ -26,7 +25,6 @@ ReactDOM.render(
     <Contact />
     <Footer />
     </LanguageProvider>
-    {/*<Home />*/}
   </React.StrictMode>,
   document.getElementById('root')
 );

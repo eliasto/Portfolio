@@ -4,6 +4,7 @@ import french from '../assets/french.svg';
 import english from '../assets/english.svg';
 import React, { useContext } from 'react';
 import { LanguageContext } from './components/languages';
+import logo from '../assets/logo_text.png';
 
 export default function Example() {
 
@@ -21,24 +22,39 @@ export default function Example() {
   }
 
   if(userLanguage === 'fr'){
-    flag = <button onClick={handleLanguageChange}><img class="w-6 h-6" src={english}></img></button>
+    flag = <button onClick={handleLanguageChange}><img className="w-6 h-6" src={english}></img></button>
   } else {
-    flag = <button onClick={handleLanguageChange}><img class="w-6 h-6" src={french}></img></button>
+    flag = <button onClick={handleLanguageChange}><img className="w-6 h-6" src={french}></img></button>
   }
  
   return (
-    <header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <div class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      {flag}  
+    <header id="page-header" className="flex flex-none items-center bg-white py-10">
+    <div className="flex flex-col text-center md:flex-row md:items-center md:justify-between space-y-6 md:space-y-0 container xl:max-w-7xl mx-auto px-4 lg:px-8">
+      <div>
+        <a className="inline-flex items-center space-x-2 font-bold text-lg tracking-wide text-green-600 hover:text-green-400">
+          <img className="opacity-75 hi-outline hi-cube-transparent inline-block h-8" src={logo}></img>
+        </a>
+      </div>
+      <div className="flex flex-col text-center md:flex-row md:items-center md:justify-between space-y-6 md:space-y-0 md:space-x-10 ">
+        <nav className="space-x-4 md:space-x-6">
+          <a href="#aboutme" className="font-semibold text-gray-900 hover:text-gray-500">
+            <span>{dictionary.aboutme}</span>
+          </a>
+          <a href="#projects" className="font-semibold text-gray-900 hover:text-gray-500">
+            <span>{dictionary.projects}</span>
+          </a>
+          <a href="#contact" className="font-semibold text-gray-900 hover:text-gray-500">
+            <span>{dictionary.contact}</span>
+          </a>
+          <a className="align-middle">
+            <span>{flag}</span>
+          </a>
+        </nav>
+      </div>
     </div>
-    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a href="#aboutme" class="mr-5 hover:text-gray-900">{dictionary.aboutme}</a>
-      <a href="#projects" class="mr-5 hover:text-gray-900">{dictionary.projects}</a>
-      <a href="#contact" class="mr-5 hover:text-gray-900">{dictionary.contact}</a>
-    </nav>
-  </div>
-</header>
+  </header>
+  
+   
 
   )
 }
